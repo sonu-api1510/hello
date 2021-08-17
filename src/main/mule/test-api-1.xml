@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="test-api-1Flow" doc:id="55682ea7-16a0-4ddd-be8c-8d8f55b8f881" >
 		<http:listener doc:name="Listener" doc:id="4185036f-73af-4474-bd5a-3a737db7f853" config-ref="HTTP_Listener_config" path="/api"/>
-		<set-payload value='#[message: "Sonu"]' doc:name="Set Payload" doc:id="be123a17-43a5-4066-b57b-412ed1ee58a4" />
+		<set-payload value='#[message: "Hello World"]' doc:name="Set Payload" doc:id="be123a17-43a5-4066-b57b-412ed1ee58a4" />
 		<ee:transform doc:name="Transform Message" doc:id="ff20388e-88b1-47e9-ad6b-979d523119f0" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
